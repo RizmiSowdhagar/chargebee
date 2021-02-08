@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Chargebee</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			overflow:auto;
+		}
+		#navbar {
+  
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: bottom 0.3s;
+}
+
+#navbar li.nav:hover {
+  background-color: white;
+}
+
+		h1.h1{
+			position: relative;
+			position: absolute;
+			text-align: left;
+			font-size: 40px;
+			font-family:  'Brush Script MT', cursive;
+			margin-top: 15px;
+			margin-left: 36px;
+		}
+		
+		li.nav{
+      list-style-type: none;
+      position: absolute;
+      font-family: Yu Gothic Light;
+      font-weight:  bold;
+      color: #404040;
+      font-size: 15px;
+      margin-top: 35px;
+        }
+        
+
+	     	button.button1{
+	     		position: relative;
+	     		left:8%;
+	     		top: 23px;
+	     		color: white;
+	     		background-color: orange;
+	     		font-weight: bold;
+	     		border: 2px solid orange;
+	     		padding: 7px;
+	     		padding-left: 20px;
+	     		padding-right: 20px;
+	     		font-size: 13px;
+	     	}
+	     	
+	     	button.button2{
+	     		position: relative;
+	     		margin-left:30%;
+	     		margin-top: 30%;
+	     		color: white;
+	     		background-color: #5900b3;
+	     		font-size: 20px;
+	     		border: 2px solid  #5900b3;
+	     		padding: 15px;
+	     		padding-left: 40px;
+	     		padding-right: 40px;
+	     		border-radius: 5px ;
+	     	}
+	     	
+	     	button.button3{
+	     		position: relative;
+	     		position: absolute;
+	     		margin-left:4%;
+	     		margin-top: 30%;
+	     		color: black;
+	     		background-color: white;
+	     		font-size: 20px;
+	     		border: 2px solid  #5900b3;
+	     		padding: 15px;
+	     		padding-left: 40px;
+	     		padding-right: 40px;
+	     		border-radius: 5px ;
+	     	}
+	     	button.button4{
+	     		position: relative;
+	     		position: absolute;
+	     	
+	     		color: black;
+	     		background-color: white;
+	     		font-size: 15px;
+	     		border: 1px solid  #5900b3;
+	     		padding: 10px;
+	     		padding-left: 10px;
+	     		padding-right: 10px;
+	     		border-radius: 5px ;
+	     	}
+	     	span.span1 span.span2{
+	     		font-weight: bold;
+	     	}
+	     	span.span2{
+	     		display: none;
+	     	}
+	     	button:hover .span1{
+	     		display: none;
+	     	}
+	     	button:hover .span2{
+	     		display: inline;
+	     		margin-left: 10px;
+	     	}
+	     	li.span2{
+	     		display: none;
+	     	}
+	     	li:hover .span1{
+	     		display: none;
+	     	}
+	     	li:hover .span2{
+	     		display: inline;
+	     		margin-left: 5px;
+	     	}
+	     	p:hover .span1{
+	     		display: none;
+	     	}
+	     	p:hover .span2{
+	     		display: inline;
+	     		margin-left: 5px;
+	     	}
+	     	span.span3{
+	     		display: none;
+	     	}
+	     	button:hover .span4{
+	     		display: none;
+	     	}
+	     	button:hover .span3{
+	     		display: inline;
+	     		margin-left: 5px;
+	     	}
+	     	div.pur-bor{
+	     		
+	     	}
+	     	.footer{
+	     		list-style-type: none;
+	     		color: #1a1aff;
+	     		font-size: 18px;
+	     		text-decoration: none;
+	     		margin-bottom: 10px;
+	     	}
+	     	.footer:hover{
+	     		margin-left: 5px;
+	     	}
+	     	
+
+
+	</style>
+</head>
+<body>
+	<div style="background-image: linear-gradient(#e6f7ff,white);">
+		<div id="navbar">
+		<h1 class="h1">Chargebee</h1>
+
+    <li style="margin-left: 15%" class="nav"> Product
+      </li>
+ 
+    <li class="nav" style="margin-left:21%;">Pricing</li>
+      <li class="nav" style="margin-left:26%;">Solution</li>
+      <li class="nav" style="margin-left:32%">Customers</li>
+      <li class="nav" style="margin-left:39%">Resources</li>
+
+		<i style="color: orange;font-size: 20px;position: relative;top: 23px;margin-left: 73%;" class="fa fa-lock" aria-hidden="true"></i>
+		<li class="li1" style="margin-left: 75%;font-size: 18px;position: absolute;top: 25px; list-style-type: none">Log In <span class="span1">></span><span class="span2">></span></li>
+		<button class="button1">Schedule a Demo <span class="span1">></span><span class="span2">></span></button>
+
+	</div>
+	<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+		<p class="p1" style="position: relative;
+	     		position: absolute;
+	     		text-align: center;
+	     		margin-top: 10%;
+	     		margin-left: 18%;
+	     		color:#7a00cc;
+	     		
+	     		font-size: 45px;">Subscription Billing & Revenue Operations
+</p>
+<p class="p2" style="position: relative;
+	     		position: absolute;
+	     		text-align: center;
+	     		margin-top: 15%;
+	     		margin-left: 31%;
+	     		color:black;
+	     	
+	     		font-size: 45px;">for Fast-growth B2B SaaS</p>
+	     		<p class="p3" style="position: relative;
+	     		position: absolute;
+	     		text-align: center;
+	     		margin-top: 20%;
+	     		margin-left: 32%;
+	     		font-size: 20px;
+	     		color:black;"> Get the operational sophistication to achieve, sustain,<br>
+and scale recurring revenue.</p>
+                <button style=" box-shadow: 5px 10px 10px grey;" class="button2">Schedule a Demo <span class="span1">-></span><span class="span2">-></span></button>   
+                <button style="color:#5900b3 " class="button3">Sign Up for Free <span class="span1">-></span><span class="span2">-></span></button> <br><br><Br>  
+	</div>
+	<div>
+		<img style="position: relative; overflow: hidden;" src="pic7.png">
+	</div>
+	<div class="marque">
+		<p style="text-align: center;font-size:20px;">Thousands of Scaling SaaS Businesses Love Us</p>
+		<marquee scrolldelay="100" style="text-align: center; color: black;margin-left: 40%;margin-right: 40%;"><span style="font-size: 25px;">okta</span><span style="font-size: 25px;margin-left: 15%; font-family: Arial Black">Dooddle</span><span style="font-family: Perpetua Titling MT; font-size: 25px; margin-left: 15%">Percona</span><span style="font-family: Lucida Calligraphy; font-size: 25px; margin-left: 15%">KNEWTON</span><span style="font-family: Georgia; font-size: 25px; margin-left: 15%">freedom</span></marquee><br><br><br>
+	</div>
+	<div class="body1">
+		<img style="position: absolute;right: 5%;" src="https://webstatic.chargebee.com/assets/web/352/images/home/lemon/recurring-billing-graphic.svg">
+		<span style="font-size: 17px;color:#5900b3;font-family: Bookman Old Style;margin-left: 10%; ">No more spreadsheet errors</span><br><br>
+		<span style="color: black;font-weight: bold;font-size: 20px;margin-left: 10%;font-family: Arial">Automate Recurring Billing</span><br><br>
+		<span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial">Scale your SaaS through 480+ recurring</span><br><span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial"> billing scenarios that automate who you bill,<br><span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial"> when, and how. No humans, no</span><br><span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial">spreadsheets, no missed payments!</span><br><br>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Billing Schedules</span></span>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Proration & Invoicing</span></span><br><br>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Proration & Invoicing</span></span>
+		<span style="font-size: 15px;margin-left: 8%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Payment Methods</span></span><br><br>
+		<button style="color:#5900b3;margin-left: 10%; " class="button4">Learn More <span class="span3">-></span><span style="margin-left: 13px;" class="span4">-></span></button>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><Br><br>
+
+	<div class="body2">
+		<img style="position: absolute;left: 6%;" src="https://webstatic.chargebee.com/assets/web/352/images/home/lemon/subscription-graphic.svg">
+		<span style="font-size: 17px;color:#5900b3;font-family: Bookman Old Style;position:relative;margin-left: 60%; ">No more developer dependency</span><br><br>
+		<span style="color: black;font-weight: bold;font-size: 20px;margin-left: 60%;font-family: Arial">Smarter Subscription Management</span><br><br>
+		<span style="color: black;font-size: 20px;margin-left: 60%;font-family: Arial">Experiment rapidly with pricing structures,</span><br><span style="color: black;font-size: 20px;margin-left: 60%;font-family: Arial">product catalogs, and subscription lifecycles<br><span style="color: black;font-size: 20px;margin-left: 60%;font-family: Arial">with a business-user-first experience.</span><br><br>
+		<span style="font-size: 15px;margin-left: 60%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Price modeling</span></span>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span>Product Catalog</span></span><br><br>
+		<span style="font-size: 15px;margin-left: 60%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Trial management</span></span>
+		<span style="font-size: 15px;margin-left: 8%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span>Lifecycle automation</span></span><br><br>
+		<button style="color:#5900b3;margin-left: 60%; " class="button4">Learn More <span class="span3">-></span><span style="margin-left: 13px;" class="span4">-></span></button>
+	</div>
+	<br><br><br><br><br><br><br><br><br>
+<div class="body3>">
+	<span style="font-size: 17px;color:#5900b3;font-family: Bookman Old Style;margin-top: 3%;margin-left: 10%;position: absolute; ">No more lost opportunities</span><br><br>
+	<img style="position: absolute;right: 5%;" src="https://webstatic.chargebee.com/assets/web/352/images/home/lemon/revenue-operations-graphic.svg">
+		<br><br>
+		<span style="color: black;font-weight: bold;font-size: 20px;margin-left: 10%;font-family: Arial;">Streamline Revenue Operations</span><br><br>
+		<span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial">Plug revenue leaks by aligning GTM &</span><br><span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial">Finance. Uncover growth opportunities<br><span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial">across processes, geographies, and business</span><br><span style="color: black;font-size: 20px;margin-left: 10%;font-family: Arial">models.</span><br><br>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">SaaS Analytics</span></span>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Quote-to-cash</span></span><br><br>
+		<span style="font-size: 15px;margin-left: 10%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Order-to-revenue</span></span>
+		<span style="font-size: 15px;margin-left: 9%;font-family: Arial"><i style="color: green;font-size: 20px;" class="fa fa-check" aria-hidden="true"></i><span style="margin-left: 1%;">Revenue Recognition</span></span><br><br>
+		<button style="color:#5900b3;margin-left: 10%; " class="button4">Learn More <span class="span3">-></span><span style="margin-left: 13px;" class="span4">-></span></button>
+	</span>
+</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	
+	<div class="pur-bor" style="border-top: 10px solid #ff00ff;border-bottom: 10px solid #ff00ff; overflow: hidden; background-color:#330066;">
+		
+			<div>
+			<p class="p1" style="position: relative;
+	     		position: absolute;
+	     		
+	     		font-family:Cambria;
+	     		margin-top: 8%;
+	     		margin-left: 8%;
+	     		color:white;
+	     		text-align: left;
+	     		
+	     		font-size: 45px;">Works With Your<br>
+	     			     		
+Revenue Management Stack
+</p>
+<br><br><br>
+<p style="position: absolute;
+	     		
+	     		font-family: Cambria;
+	     		margin-top: 14%;
+	     		margin-left: 8%;
+	     		font-size: 21px;
+	     		color:white;
+	     		text-align: left;
+	     		
+	     		color: #bfbfbf;">Managing sales, payments, customer experience or your books:</br>
+if it affects your revenue cycle, Chargebee works with it.
+</p>
+<img src="pur.svg " style="margin-top: 14%; position: relative;left: 0px;overflow: hidden;">
+<div class="pur-body1" style="background-color:#330066; ">
+	<span style="font-size: 17px;color:#ff3300;font-family: Bookman Old Style;margin-left: 12%">Quote-to-Cash Automation</span>
+	<p style="margin-left: 12%;font-size: 23px;color: white;font-weight: bold;font-family: Arial">Powers Sales and Marketing CRM
+</p>
+<img src="https://webstatic.chargebee.com/assets/web/352/images/home/lemon/crm-logos.png" style="margin-left: 12%;height: 60px; width: 380px" >
+<div style="background-color:#330066;">
+	<p style="position: absolute;
+	     		
+	     		font-family: Cambria;
+	     		margin-left: 12%;
+	     		font-size: 21px;
+	     		color:white;
+	     		text-align: left;
+	     		
+	     		color: #bfbfbf;">Handle quotes, approvals, acceptance, and</br>
+collections seamlessly from within the CRM.
+</p>
+<button style="color:#3333ff;margin-left: 12%;margin-top: 100px;font-weight: bold; " class="button4">Learn More <span class="span3">-></span><span style="margin-left: 13px;" class="span4">-></span></button>
+</div>
+	
+</div>
+<div style="position: relative;padding-bottom: 150px;" class="pur-body2">
+	<span style="font-size: 17px;color:#ff3300;font-family: Bookman Old Style;position: relative;position: absolute;margin-left: 60%;margin-top: -12%">Offer More Payment Methods</span>
+	<p style="margin-left: 60%;font-size: 23px;color: white;font-weight: bold;position: absolute; font-family: Arial;margin-top:-9% ">25+ Payment Gateways
+</p>
+<p style="margin-left: 60%;font-size: 13px;color: grey;font-weight: bold;position: absolute; font-family: Arial;margin-top:-6%;background-color: #330033; border-radius: 10px;padding: 5px;">Preferred Partners
+
+</p>
+
+
+<img src="https://webstatic.chargebee.com/assets/web/352/images/home/lemon/pg-logos.png" style="margin-left: 60%;height: 80px; width: 380px;margin-top: -3%" >
+<div style="background-color:#330066;">
+	<p style="position: absolute;
+	     		
+	     		font-family: Cambria;
+	     		margin-top: 1%;
+	     		margin-left: 60%;
+	     		font-size: 21px;
+	     		color:white;
+	     		
+	     		color: #bfbfbf;">Accept payments across a wide array of</br>
+gateways, geographies, and currencies.
+</p>
+<button style="color:#3333ff;margin-left: 60%;margin-top: 100px;font-weight: bold; " class="button4">Learn More <span class="span3">-></span><span style="margin-left: 13px;" class="span4">-></span></button>
+</div>
+	
+</div>
+<br><br><br>
+<div class="pur-body3" style="background-color:#330066;padding-bottom: 190px; ">
+	<span style="font-size: 17px;color:#ff3300;font-family: Bookman Old Style;margin-left: 12%">Streamline Finance Operations</span>
+	<p style="margin-left: 12%;font-size: 23px;color: white;font-weight: bold;font-family: Arial">Syncs with Accounting Software
+</p>
+<img src="https://webstatic.chargebee.com/assets/web/352/images/home/lemon/acc-logos.png" style="margin-left: 12%;height: 60px; width: 380px" >
+<div style="background-color:#330066;">
+	<p style="position: absolute;
+	     		
+	     		font-family: Cambria;
+	     		margin-left: 12%;
+	     		font-size: 21px;
+	     		
+	     		text-align: left;
+	     	
+	     		color: #bfbfbf;">Reconcile books in seconds, handle</br>compliance, and recognize revenue<br> painlessly.
+
+</p>
+<button style="color:#3333ff;margin-left: 12%;margin-top: 130px;font-weight: bold; " class="button4">Learn More <span class="span3">-></span><span style="margin-left: 13px;" class="span4">-></span></button>
+</div>
+	
+</div>
+<div style="padding-bottom: 100px;">
+<p style="position: absolute;
+	     		padding-top: 20px;
+	     		font-family: Cambria;
+	     		margin-left: 25%;
+	     		font-size: 30px;
+	     		color:white;
+	     		text-align: left;
+	     		background-color:#330066;
+	     		">Talk to us today about<br>
+your revenue workflow
+</p>
+<button style=" box-shadow: 5px 10px 10px grey;margin-top: 4%;margin-left: 50%;" class="button2">Schedule a Demo <span class="span1">-></span><span class="span2">-></span></button> 
+		</div>
+
+		</div>
+		<br>
+		<p style="text-align: center;font-size: 40px;font-weight: bold;font-family:Century Schoolbook;color: white;">Great Products Deserve Hyper Growth.<br>
+Chargebee Makes it Easy.</p>
+</div>
+<p style="position: absolute;font-size: 35px;font-weight: bold;position: relative;margin-left: 10%;margin-top: 5%;">Still unsure? Step Inside and See<br>
+What The Future Looks Like.
+</p>
+<button style=" box-shadow: 5px 10px 10px grey;margin-left: 55%;position: absolute;margin-top: -7%;margin-bottom: 10%;" class="button2">Schedule a Demo <span class="span1">></span><span class="span2">-></span></button>
+<hr>
+<p class="p1" style="color: black;font-family: Cambria; font-size: 17px;font-weight: bold;margin-top: 5%;margin-left: 10%">Product <span class="span1">></span><span class="span2">-></span></p>
+<li style="margin-left: 10%;" class="footer">Subscription Management</li>
+<li style="margin-left: 10%;" class="footer">Recurring Billing and Invoicing</li>
+<li style="margin-left: 10%;" class="footer">Recurring Payments</li>
+<li style="margin-left: 10%;" class="footer">Accounting and Taxes</li>
+<li style="margin-left: 10%;" class="footer">SaaS Reporting</li>
+<li style="margin-left: 10%;" class="footer">Enterprise Billing</li>
+<li style="margin-left: 10%;" class="footer">Integrations</li>
+
+<p class="p1" style="color: black;font-family: Cambria; font-size: 17px;font-weight: bold;margin-top:-19%;margin-left: 35%;position: absolute;position: relative;">Help & Support <span style="font-weight: bold;" class="span1">></span><span class="span2">-></span></p>
+<li style="margin-left: 35%;position: absolute;" class="footer">Security</li>
+<li style="margin-left: 35%;position: absolute;margin-top: 33px;" class="footer">FAQs</li>
+<li style="margin-left: 35%;position: absolute;margin-top: 63px;" class="footer">Status</li>
+<li style="margin-left: 35%;position: absolute;margin-top: 93px;" class="footer">Product Documentation</li>
+<li style="margin-left: 35%;position: absolute;margin-top: 123px;" class="footer">API Documentation</li>
+<li style="margin-left: 35%;position: absolute;margin-top: 153px;" class="footer">Supported Payment Gateways</li>
+<li style="margin-left: 35%;position: absolute;margin-top: 183px;" class="footer">Sitemap</li>
+
+<p class="p1" style="color: black;font-family: Cambria; font-size: 17px;font-weight: bold;margin-top:-37px;margin-left: 60%;position: absolute;position: relative;">Resources <span style="font-weight: bold;" class="span1">></span><span class="span2">-></span></p>
+<li style="margin-left: 60%;position: absolute;" class="footer">Blog</li>
+<li style="margin-left: 60%;position: absolute;margin-top: 33px;" class="footer">Comapre Payment Gateways</li>
+<li style="margin-left: 60%;position: absolute;margin-top: 63px;" class="footer">Tackling Payment Failures</li>
+<li style="margin-left: 60%;position: absolute;margin-top: 93px;" class="footer">Enterprise Billing Guide</li>
+<li style="margin-left: 60%;position: absolute;margin-top: 123px;" class="footer">Webinars</li>
+<li style="margin-left: 60%;position: absolute;margin-top: 153px;" class="footer">Glossaries</li>
+
+<p class="p1" style="color: black;font-family: Cambria; font-size: 17px;font-weight: bold;margin-top:-37px;margin-left: 85%;position: absolute;position: relative;">Company <span style="font-weight: bold;" class="span1">></span><span class="span2">-></span></p>
+<li style="margin-left: 85%;position: absolute;" class="footer">Customers</li>
+<li style="margin-left: 85%;position: absolute;margin-top: 33px;" class="footer">Partners</li>
+<li style="margin-left: 85%;position: absolute;margin-top: 63px;" class="footer">Careers</li>
+<li style="margin-left: 85%;position: absolute;margin-top: 93px;" class="footer">Peers</li>
+<li style="margin-left: 85%;position: absolute;margin-top: 123px;" class="footer">Terms</li>
+<li style="margin-left: 85%;position: absolute;margin-top: 153px;" class="footer">Privacy</li>
+<br><br><br><br>
+<h1 style="margin-top: 15%;margin-left: 10%;" class="h1">Chargebee</h1>
+<i style=" position: relative;font-size: 25px;margin-top: 18%;margin-left: 80%;" class="fa fa-facebook-official" aria-hidden="true"></i>
+<i style=" position: relative;font-size: 25px;margin-left: 10px;" class="fa fa-twitter" aria-hidden="true"></i>
+<i style=" position: relative;font-size: 25px;margin-left: 10px;" class="fa fa-youtube-play" aria-hidden="true"></i>
+<i style=" position: relative;font-size: 25px;margin-left: 10px;" class="fa fa-linkedin-square" aria-hidden="true"></i>
+</body>
+</html>
